@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "107020193206",
-    "project_id": "fir-practice-project-7d91c",
-    "storage_bucket": "fir-practice-project-7d91c.appspot.com"
+    "project_number": "262047029538",
+    "firebase_url": "https://uohnotes-default-rtdb.firebaseio.com",
+    "project_id": "uohnotes",
+    "storage_bucket": "uohnotes.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:107020193206:android:907891946fa314df4e0517",
+        "mobilesdk_app_id": "1:262047029538:android:a884793c2f944af7f1ed7b",
         "android_client_info": {
           "package_name": "com.firebase.practiceapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "107020193206-foqhjuagks19l7riotg0fjo69k3dlvll.apps.googleusercontent.com",
+          "client_id": "262047029538-b5k3fljk6fr4jj1rk1k3q9k4d39s5004.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDowN_CCcHmm_eZ_Gu9LTuMtdssCSnmj-w"
+          "current_key": "AIzaSyBUnzTt4liOjrXjqkvvWD4e4wUwsyjWi1w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "107020193206-foqhjuagks19l7riotg0fjo69k3dlvll.apps.googleusercontent.com",
+              "client_id": "262047029538-b5k3fljk6fr4jj1rk1k3q9k4d39s5004.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
