@@ -76,12 +76,14 @@ class _LoginViewState extends State<LoginView> {
                       }
                     },
                     child: const Text('Login'),
+
                   ),
                 ],
               );
             default:
               return const Text('Loading.......');
           }
+          
         },
       ),
     );
