@@ -49,7 +49,7 @@ class _LoginViewState extends State<LoginView> {
                     enableSuggestions: false,
                     autocorrect: false,
                     keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(hintText: 'Enter your email'),
+                    decoration: InputDecoration(hintText: 'Enter your email '),
                   ),
                   TextField(
                     controller: _password,
@@ -81,7 +81,7 @@ class _LoginViewState extends State<LoginView> {
                 ],
               );
             default:
-              return const Text('Loading.......');
+              return const Text('Loading.....');
           }
           
         },
