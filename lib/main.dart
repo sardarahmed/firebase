@@ -1,4 +1,4 @@
-// ignore_for_file: unused_field, prefer_const_constructors
+// ignore_for_file: unused_field, prefer_const_constructors, avoid_print
 
 import 'dart:html';
 
@@ -78,10 +78,21 @@ class _RegisterViewState extends State<RegisterView> {
                     onPressed: () async {
                       final email = _email.text;
                       final password = _password.text;
-                      final UserCredential = await FirebaseAuth.instance
-                          .createUserWithEmailAndPassword(
-                              email: email, password: password);
-                      print(UserCredential);
+                      try {
+                        final UserCredential = await FirebaseAuth.instance
+                            .createUserWithEmailAndPassword(
+                                email: email, password: password);
+                        print(UserCredential);
+                      } on FirebaseAuthException catch (e) {
+                        if (e.code == "weak-password") {
+                          print("weak-password");
+                        } else if (e.code == "email-already-in-use") {
+                          print("email-already-in-use");
+                        } else if (e.code ==
+                            "The email address is badly formatted") {
+                          print("invalid-email");
+                        }
+                      }
                     },
                     child: const Text('Register'),
                   ),
